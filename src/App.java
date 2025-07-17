@@ -44,8 +44,12 @@ public class App {
             new MazeSolverRecursivoCompleto()
         );
         MazeSolve solver=solvers.get(0);
+        MazeSolve solver2=solvers.get(1);
         List<Cell> path;
+        List<Cell> path2;
         path=solver.getPath(maze.getMatriz(), start, end);
         System.out.println(path);
+        path2=solver2.getPath(maze.getMatriz(), start, end);
+        System.out.println(path2);
     }
 }
